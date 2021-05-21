@@ -21,5 +21,9 @@ public class AddressBookPayrollService {
 	public long countEntries(IOService ioService) {
 		return addressbookList.size();
 	}
+	
+	public void addContactToPayroll(AddressBookData addressBookData, IOService ioService) {
+		addressbookList.add(addressBookData);
+	}
 
 }
